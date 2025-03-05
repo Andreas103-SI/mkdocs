@@ -1,5 +1,11 @@
-site_name: My Docs
-
-theme:
-  name: material
-
+site_name: Documentación de Proyecto2 - TaskFlow
+theme: material
+nav:
+  - Inicio: index.md
+  - Configuración del Entorno: entorno.md
+  - Configuración de la Base de Datos: base_datos.md
+  - Autenticación: autenticacion.md
+  - Vistas y URLs: vistas_urls.md
+  - Formularios y Plantillas: formularios_plantillas.md
+  - Gestión de Proyectos: proyectos.md
+  - Errores y Soluciones: errores.md

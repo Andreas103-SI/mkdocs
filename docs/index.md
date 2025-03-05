@@ -2,6 +2,10 @@
 
 Esta es la documentación de mi proyecto. Aquí puedes agregar información relevante.
 
+# Documentación de Proyecto2 - TaskFlow
+
+Este proyecto es una aplicación web desarrollada con Django para gestionar proyectos, tareas y comunicación entre usuarios. Estoy trabajando en Windows y MacOS con Python 3.11.9 y un entorno virtual (venv). Aquí documento los pasos realizados hasta ahora, incluyendo configuración, autenticación, vistas, URLs, formularios y errores encontrados.
+
 ## Instalación
 1. Clona el repositorio
 2. Instala las dependencias con `pip install -r requirements.txt`
@@ -33,6 +37,14 @@ Esta es la documentación de mi proyecto. Aquí puedes agregar información rele
         * Hemos creado la base de datos "SystemCom" en pgAdmin 4.
         * Hemos configurado la conexión a la base de datos en pgAdmin 4.
         * Hemos configurado el idioma de pgAdmin 4 a español.
+
+    * ** Instalación de dependencias:**
+
+        * Hemos instalado el módulo `psycopg2-binary`:
+
+    ```bash
+    pip install psycopg2-binary
+
     * **Migraciones de la base de datos:**
         * Aunque no hemos realizado migraciones propiamente dichas, hemos creado la base de datos desde cero en pgAdmin 4.
 * ** Base de Datos y Modelos:**
