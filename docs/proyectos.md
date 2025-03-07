@@ -32,3 +32,7 @@ Este proyecto es una aplicación web desarrollada con Django para la gestión de
 - Estructura de carpetas: `templates/proyectos/` y `templates/tareas/` para plantillas específicas.
 - Configuración de URLs en `TaskFlow/urls.py` e inclusión en `Sistema/urls.py`.
 - Uso de mixins personalizados en `mixins.py` para restricciones de acceso.
+## Mensaje de Permiso Denegado
+- **Problema:** Los miembros veían un 404 al intentar acceder a proyectos no asignados.
+- **Solución:** Modifiqué `ProyectoDetailView` para capturar `Http404` y mostrar una página personalizada (`no_permission.html`) con el mensaje "No tienes permiso...".
+- **Pruebas:** Verifiqué que los miembros vean el mensaje en lugar del 404 al acceder a proyectos restringidos.
