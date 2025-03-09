@@ -1,4 +1,4 @@
-site_name: Documentación de Proyecto2 - TaskFlow
+site_name: TaskFlow Docs
 theme: material
 nav:
   - Inicio: index.md
@@ -9,3 +9,5 @@ nav:
   - Formularios y Plantillas: formularios_plantillas.md
   - Gestión de Proyectos: proyectos.md
   - Errores y Soluciones: errores.md
+  - Notificaciones: notificaciones.md  
+theme: readthedocs
