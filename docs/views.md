@@ -95,3 +95,36 @@ class TareaListView(LoginRequiredMixin, ListView):
         else:
             context['proyecto'] = None
         return context
+
+
+
+## Explicación
+
+### Propósito
+`TareaListView` se utiliza para mostrar una lista de tareas en la URL `/tareas/` (sin filtro de proyecto) o `/proyectos/<int:proyecto_id>/tareas/` (filtrado por proyecto). Requiere autenticación mediante `LoginRequiredMixin`, lo que redirige a la página de inicio de sesión si el usuario no está autenticado.
+
+### Funcionalidad Clave
+**Filtrado de tareas:**
+- Si el usuario es superusuario o staff, ve todas las tareas del proyecto especificadas.
+- Si es un usuario normal autenticado, solo ve las tareas donde sea el `asignado_a` o esté en `usuarios_asignados`.
+- Usa objetos `Q` para combinar condiciones lógicas (OR) en el filtro.
+
+**Contexto adicional:**
+- Proporciona `proyecto_id` y `proyecto` al contexto para que la plantilla pueda mostrar detalles del proyecto asociado (si aplica).
+
+### Dependencias
+- `LoginRequiredMixin`: Para requerir autenticación.
+- `ListView`: Para manejar la lista genérica de objetos.
+- `models.Q`: Para consultas complejas con condiciones lógicas.
+- `get_object_or_404`: Para obtener el objeto `Proyecto` de forma segura.
+
+### Uso
+Acceda a `/proyectos/1/tareas/` para ver las tareas del proyecto con ID 1. La plantilla `tareas/tarea_list.html` renderiza la lista de tareas y muestra enlaces para editar o eliminar.
+
+### Notas de depuración
+Los mensajes impresos están incluidos para depurar el flujo (proyecto ID, autenticación, filtros, etc.). Estos se pueden eliminar en producción.
+
+### Mejoras futuras
+- Agregar paginación para manejar grandes listas de tareas.
+- Incluir filtros adicionales (por estado, fecha, etc.) en el queryset.
+- Optimizar las consultas con `select_related` o `prefetch_related` para relaciones como `usuarios_asignados`.
