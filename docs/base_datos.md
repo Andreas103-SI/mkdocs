@@ -31,7 +31,6 @@ DBeaver Community es una herramienta de administración de bases de datos multip
    - **Contraseña**: Tu contraseña  
 4. Haz clic en **"Probar conexión"** para verificar y luego en **"Finalizar"**.  
 
-![alt text](img/image.png)
 
 ### Descarga de controladores  
 Si DBeaver te pide descargar los controladores JDBC de PostgreSQL, acepta la descarga.  
@@ -56,7 +55,7 @@ Si DBeaver te pide descargar los controladores JDBC de PostgreSQL, acepta la des
 - Exporta el diagrama como imagen (**clic derecho -> "Exportar diagrama"**).  
 
 ## Ejemplo de Diagrama Entidad-Relación (DER)  
-![Diagrama Entidad-Relación generado con DBeaver](img/SystemCom - public.png)  
+![Diagrama Entidad-Relación generado con DBeaver]
 
 ## Consideraciones  
 - Las tablas de unión para relaciones muchos a muchos se crean automáticamente en Django, no necesitas modelos explícitos para ellas.  

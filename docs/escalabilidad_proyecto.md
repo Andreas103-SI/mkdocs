@@ -19,9 +19,11 @@ def tarea_list(request, proyecto_id):
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     return render(request, 'tarea_list.html', {'proyecto': proyecto, 'tareas': page_obj})
+```
 
+## Ejemplo en la plantilla:
 
-Ejemplo en la plantilla:
+```python
 html
 <nav aria-label="Page navigation">
     <ul class="pagination justify-content-center mt-4">
@@ -36,8 +38,7 @@ html
         {% endif %}
     </ul>
 </nav>
-
-
+```
 ## 2.Búsqueda y Filtros
 
 Para mejorar la experiencia del usuario y optimizar la navegación en listas extensas, se puede implementar funcionalidades de **búsqueda** y **filtrado**. Esto permite a los usuarios encontrar de manera más rápida y eficiente la información que necesitan, incluso con un gran volumen de datos.
