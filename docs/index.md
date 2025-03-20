@@ -1,6 +1,7 @@
 # Bienvenido a mi documentación
 
 
+## Otra imagen
 ![Otra Imagen](image1.png)
 
 
@@ -79,8 +80,8 @@ Este proyecto es una aplicación web desarrollada con Django para gestionar proy
 * Hemos sentado las bases para la creación de modelos y la gestión de datos.
 * Hemos documentado soluciones a problemas comunes.
 
-
-    ![Diagrama DER](DER.png)
+## Diagrama DER
+![DER](DER.png)
 
 
 **Próximos pasos:**
