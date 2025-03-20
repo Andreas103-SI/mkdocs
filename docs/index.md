@@ -1,5 +1,9 @@
 # Bienvenido a mi documentación
 
+
+![Otra Imagen](image1.png)
+
+
 Esta es la documentación de mi proyecto. Aquí puedes agregar información relevante.
 
 # Documentación de Proyecto2 - TaskFlow
@@ -59,6 +63,8 @@ Este proyecto es una aplicación web desarrollada con Django para gestionar proy
     * Hemos realizado pruebas de conexión a la base de datos.
     * Hemos verificado la creación de la base de datos.
 
+
+
 **2. Documentación Funcional (para usuarios o clientes)**
 
 * ** Manual de Usuario:**
@@ -73,9 +79,13 @@ Este proyecto es una aplicación web desarrollada con Django para gestionar proy
 * Hemos sentado las bases para la creación de modelos y la gestión de datos.
 * Hemos documentado soluciones a problemas comunes.
 
+
+    ![Diagrama DER](DER.png)
+
+
 **Próximos pasos:**
 
-* Crear un diagrama ERD para la base de datos "SystemCom".
+
 * Definir los modelos y relaciones de la base de datos.
 * Documentar los pasos para importar datos a la base de datos.
 * Documentar los pasos para realizar copias de seguridad de la base de datos.
