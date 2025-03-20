@@ -1,7 +1,7 @@
 # Bienvenido a mi documentación
 
 
-## Otra imagen
+## vista del proyecto
 ![Otra Imagen](image1.png)
 
 
